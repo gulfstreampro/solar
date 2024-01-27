@@ -136,7 +136,7 @@
             model.traverse(function (child) {
               if (child.isMesh) {
                 child.material.envMap = envMap;
-                child.material.envMapIntensity = 1; // adjust the intensity of the environment map
+                child.material.envMapIntensity = 0.8 // adjust the intensity of the environment map
                 child.material.needsUpdate = true;
               }
             });
